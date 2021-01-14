@@ -3,8 +3,14 @@
     margin: 0;
 }
 
-body{
+@font-face{
+font-family: 'pixelised';
+src: url('./font/pixelised/pixelised.ttf');
+}
 
+body{
+    font-family: 'pixelised';
+    font-size: 40px;
     background-color: black;
     height :100vh;
     display: flex;
@@ -18,14 +24,22 @@ body{
     border-style: ridge solid solid ridge;
     border-color: white;
     border-width: 10px;
+    height:590px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: flex-start;
 }
 
- #wrapper div{
+.casesBox div{
     width: 70px;
     height: 70px;
+    border-style: none dotted dotted none;
     border-width: 1px bold;
-    border-style: none dotted dotted none;  
+    background-color: darkturquoise;
 }
+
+/* .
+
+    width: 70px;
+    height: 70px;
+}  
