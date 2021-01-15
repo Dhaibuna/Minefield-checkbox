@@ -30,7 +30,7 @@ body{
     flex-wrap: wrap;
 }
 
-.item:not(.hiddenCase){
+div:not(.hiddenCase){
     width: 70px;
     height:70px;
     text-align: center;
