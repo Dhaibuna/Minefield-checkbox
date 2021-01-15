@@ -36,6 +36,9 @@ body{
     text-align: center;
     border-color: darkslategray;
     border-style: none dotted dotted none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .one{
@@ -50,9 +53,9 @@ body{
     color: #F44728;
 }
 
-.pikaMine{
+/* .pikaMine{
     visibility: hidden; 
-}
+}   TO COME SOON */
 
 .hiddenCase{
     width: 70px;
