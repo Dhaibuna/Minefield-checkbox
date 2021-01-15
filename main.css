@@ -40,7 +40,6 @@ div:not(.hiddenCase){
     display:flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .one{
@@ -65,15 +64,19 @@ div:not(.hiddenCase){
     display: flex;
 }
 
-.hiddenCase >.emptyCase, .hiddenCase >.pikaMine{
-    border-style: hidden;    
-}
+/* Child Combnatinator : */
+/* The direct child B ( ".empty" & ".pikaMine" here) of A (".hiddenCase" here)*/
+/*  are focused, so I could remove my dotted border that I put on ".hiddentCase"  */
+/* in reponse to "div:not(.hiddenCase) above" at line 34) */
+
+.hiddenCase >.emptyCase, .hiddenCase >.pikaMine{ 
+    border-style: hidden;                                                            
+}    
 
 .pikaMine:hover{
     background-image: url(./img/pikaMine.png);
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: center; 
 }
 
 .hiddenCase >.emptyCase:hover{
