@@ -64,6 +64,10 @@ div:not(.hiddenCase){
     display: flex;
 }
 
+.hiddenCase >.emptyCase, .hiddenCase >.pikaMine{
+    border-style: hidden;    
+}
+
 .pikaMine:hover{
     background-image: url(./img/pikaMine.png);
     background-repeat: no-repeat;
