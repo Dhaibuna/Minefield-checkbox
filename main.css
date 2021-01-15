@@ -9,37 +9,74 @@ src: url('./font/pixelised/pixelised.ttf');
 }
 
 body{
+    background: black;
     font-family: 'pixelised';
     font-size: 40px;
-    background-color: black;
     height :100vh;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 #wrapper{
     background-color: lightgray;
-    width: 590px;
-    border-style: ridge solid solid ridge;
-    border-color: white;
-    border-width: 10px;
-    height:590px;
+    border-style: ridge;
+    border-color: lightgray;
+    border-width: 15px;
+    width: 584px;
+    height: 584px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
+    flex-flow: row wrap;
 }
 
-.casesBox div{
-    width: 70px;
-    height: 70px;
+
+.casesBox{
+    border-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0; 
+}
+
+div.three, .one, .two, .mine, .hiddenCase, .emptyCase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0; 
+}
+
+.casesBox div:not(.hiddenCase){
     border-style: none dotted dotted none;
-    border-width: 1px bold;
-    background-color: darkturquoise;
+    border-color: #000000;
+} 
+
+
+.one{
+    
+    color: #2F69FB;
 }
 
-/* .
+.two{
+    
+    align-items:center;
+    color: #429010;
+}
 
-    width: 70px;
-    height: 70px;
-}  
+.three{
+   
+   
+    color: #F44728;
+}
+
+.hiddenCase{
+   border-style: outset outset outset outset;
+   border-color : white black black white;
+}
+
+.hiddenCase:hover{
+    background-color: #7F7F7F;
+}
+
+
+
