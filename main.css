@@ -25,31 +25,24 @@ body{
     border-width: 15px;
     width: 584px;
     height: 584px;
-    display: flex;
-    flex-flow: row wrap;
 }
 
 
 .casesBox{
+    background: blue ;
+    color:chartreuse;
+    font-size:5em;
     border-color: darkslategray;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-basis: 0; 
 }
 
 div.three, .one, .two, .mine, .hiddenCase, .emptyCase{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    flex-basis: 0; 
+    
 }
 
 .casesBox div:not(.hiddenCase){
-    border-style: none dotted dotted none;
+    /* border-style: none dotted dotted none;
     border-color: #000000;
-} 
+}  */
 
 
 .one{
@@ -64,14 +57,12 @@ div.three, .one, .two, .mine, .hiddenCase, .emptyCase{
 }
 
 .three{
-   
-   
     color: #F44728;
 }
 
 .hiddenCase{
-   border-style: outset outset outset outset;
-   border-color : white black black white;
+   /* border-style: outset outset outset outset;
+   border-color : white black black white; */
 }
 
 .hiddenCase:hover{
