@@ -39,6 +39,7 @@ div:not(.hiddenCase){
     display:flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .one{
@@ -53,23 +54,24 @@ div:not(.hiddenCase){
     color: #F44728;
 }
 
-/* .pikaMine{
-    visibility: hidden; 
-}   TO COME SOON */
-
 .hiddenCase{
     width: 70px;
     height:70px;
     text-align: center;
     border-style: none solid solid none;
-    border-color: black;
-    box-shadow: inset 3px 3px white, inset -5px -5px 0px -1px #7F7F7F;
-
+    border-color: black; 
+    box-shadow: inset 5px 5px 0px 0px #FFFFFF, inset -5px -5px 0px 0px #7F7F7F;
+    display: flex;
 }
 
-.hiddenCase:hover{
+.pikaMine:hover{
+    background-image: url(./img/pikaMine.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.hiddenCase >.emptyCase:hover{
     background-color: #7F7F7F;
+    box-shadow: inset 5px 5px 0px 0px lightgrey, inset -5px -5px 0px 0px white;
 }
-
-
-
