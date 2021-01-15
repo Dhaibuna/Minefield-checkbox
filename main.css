@@ -12,10 +12,11 @@ body{
     background: black;
     font-family: 'pixelised';
     font-size: 40px;
+    width: 100%;
     height :100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 #wrapper{
@@ -25,34 +26,23 @@ body{
     border-width: 15px;
     width: 584px;
     height: 584px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-.casesBox{
-    background: blue ;
-    color:chartreuse;
-    font-size:5em;
+.item:not(.hiddenCase){
+    width: 70px;
+    height:70px;
+    text-align: center;
     border-color: darkslategray;
+    border-style: none dotted dotted none;
 }
-
-div.three, .one, .two, .mine, .hiddenCase, .emptyCase{
-    
-}
-
-.casesBox div:not(.hiddenCase){
-    /* border-style: none dotted dotted none;
-    border-color: #000000;
-}  */
-
 
 .one{
-    
     color: #2F69FB;
 }
 
 .two{
-    
-    align-items:center;
     color: #429010;
 }
 
@@ -60,9 +50,18 @@ div.three, .one, .two, .mine, .hiddenCase, .emptyCase{
     color: #F44728;
 }
 
+.pikaMine{
+    visibility: hidden; 
+}
+
 .hiddenCase{
-   /* border-style: outset outset outset outset;
-   border-color : white black black white; */
+    width: 70px;
+    height:70px;
+    text-align: center;
+    border-style: none solid solid none;
+    border-color: black;
+    box-shadow: inset 3px 3px white, inset -5px -5px 0px -1px #7F7F7F;
+
 }
 
 .hiddenCase:hover{
