@@ -1,4 +1,4 @@
-# Minefield using Felxbox 
+# Minefield using Flexbox 
 
 ## To see it
 
